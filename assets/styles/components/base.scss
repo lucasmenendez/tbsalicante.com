@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Mr Dafoe', cursive;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+	text-transform: none;
+}
+
+#master {
+	&.ng-enter {
+        transition: .5s;
+		opacity: 0;
+    }
+    &.ng-enter-active {
+        opacity: 1;
+    }
+}

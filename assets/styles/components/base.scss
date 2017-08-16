@@ -6,16 +6,9 @@
 
 body {
 	background-color: $black;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: 'Kaushan Script', cursive;
+	font-weight: 300;
 }
 
 a {
@@ -27,9 +20,11 @@ a {
 #master {
 	&.ng-enter {
         transition: .5s;
+		transform: scale(0.9);
 		opacity: 0;
     }
     &.ng-enter-active {
         opacity: 1;
+	    transform: scale(1);
     }
 }

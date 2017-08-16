@@ -1,30 +1,27 @@
 var app = angular.module('app');
 
-app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
-    $locationProvider.html5Mode(true);
-
+app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state({
-        name: 'base',
-        url: '',
-        controller: 'mainCtrl'
-    });
-
-    $stateProvider.state({
-        name: 'base.index',
+        name: 'index',
         url: '/',
-        controller: 'indexCtrl',
         templateUrl: 'app/templates/index.html'
     });
 
     $stateProvider.state({
-        name: 'base.tattoos',
-        url: '/tattoos',
-        controller: 'tattoosCtrl'
+        name: 'page',
+        url: '',
+        templateUrl: 'app/templates/page.html'
     });
 
     $stateProvider.state({
-        name: 'base.barber',
+        name: 'page.tattoos',
+        url: '/tattoos',
+        controller: 'tattoosCtrl',
+        templateUrl: 'app/templates/tattoos.html'
+    });
+
+    $stateProvider.state({
+        name: 'page.barber',
         url: '/barber',
         controller: 'barberCtrl'
     });

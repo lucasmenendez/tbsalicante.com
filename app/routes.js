@@ -1,6 +1,8 @@
 var app = angular.module('app');
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+
     $stateProvider.state({
         name: 'index',
         url: '/',

@@ -1,6 +1,7 @@
 var app = angular.module('app');
 
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.hashPrefix('!');
     $locationProvider.html5Mode(true);
 
     $stateProvider.state({

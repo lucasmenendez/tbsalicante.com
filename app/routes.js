@@ -3,7 +3,7 @@ var app = angular.module('app');
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider.state({
         name: 'index',
-        url: '/',
+        url: '',
         templateUrl: 'app/templates/index.html'
     });
 

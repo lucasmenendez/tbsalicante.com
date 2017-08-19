@@ -8,20 +8,14 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     });
 
     $stateProvider.state({
-        name: 'page',
-        url: '',
-        templateUrl: 'app/templates/page.html'
-    });
-
-    $stateProvider.state({
-        name: 'page.tattoos',
+        name: 'tattoos',
         url: '/tattoos',
         controller: 'tattoosCtrl',
         templateUrl: 'app/templates/tattoos.html'
     });
 
     $stateProvider.state({
-        name: 'page.barber',
+        name: 'barber',
         url: '/barber',
         controller: 'barberCtrl'
     });

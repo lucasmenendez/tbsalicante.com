@@ -1,30 +1,80 @@
 #tattoos {
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
 	width: 100vw;
 	height: 100vh;
-	font-size: 0;
-	overflow: hidden;
-	z-index: 1;
+	background: $white;
 
-	background-image: url('/assets/img/tattoo.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: $yellow;
-		opacity: 0.8;
-		z-index: -1;
+	.side {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		width: 40vw;
+		max-width: 450px;
+		margin: 0 1vw;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		border: 1px solid $gray;
+		box-shadow: 0 5px 30px -5px $black;
+		z-index: 1;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			padding-bottom: 100%;
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+		    width: 100%;
+		    height: 100%;
+			opacity: 0.8;
+			background: white;
+			z-index: -1;
+		}
+
+		&.team {background-image: url("/assets/img/team.jpg");}
+		&.work {background-image: url("/assets/img/work.jpg");}
+
+		.inner {
+			position: absolute;
+		    top: 50%; left: 50%;
+		    transform: translate(-50%, -50%);
+			text-align: center;
+			padding: 2%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			img {
+				display: block;
+				width: auto;
+			    height: 10vw;
+				max-height: 112px;
+			}
+
+			h2 {
+				display: block;
+				width: 100%;
+			    text-align: center;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+		}
 	}
 
-	& > * {font-size: initial;}
 }
 

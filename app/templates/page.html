@@ -1,19 +1,18 @@
-<div id="index">
+<header id="header" data-ng-init="toggleMenu=false">
     <div class="inner">
-        <header class="header">
-            <h1 class="logo">
-                <a ui-sref="index">
-                    <img src="assets/img/logo.svg"/>
-                    Tattoo Barber Shop Alc
-                </a>
-            </h1>
-        </header>
-        <nav class="index-menu">
+        <h1 class="logo">
+            <a ui-sref="index">
+                <img src="assets/img/logo.svg"/>
+                Tattoo Barber Shop Alc
+            </a>
+        </h1>
+        <span class="hamburger" data-ng-click="toggleMenu=!toggleMenu"></span>
+        <nav class="main-menu" data-ng-class="{'show': toggleMenu}">
             <a ui-sref="page.tattoos">
                 <img src="assets/icons/tattoo.svg"/>
                 Tattoo Studio
             </a>
-            <a ui-sref="barber">
+            <a ui-sref="page.barber">
                 <img src="assets/icons/barber.svg"/>
                 Barber Shop
             </a>
@@ -27,4 +26,6 @@
             </a>
         </nav>
     </div>
-</div>
+</header>
+
+<ui-view></ui-view>

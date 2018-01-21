@@ -5,4 +5,7 @@ const routes = [
 	//{ name: "notfound", path: "*", component: NotFound }
 ]
 
-const Router = new VueRouter({ routes });
+const Router = new VueRouter({
+	routes,
+	linkActiveClass: "active"
+});

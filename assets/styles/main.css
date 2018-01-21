@@ -119,7 +119,7 @@ a {
           margin: 0 auto;
           width: 60%;
           max-width: 60px; }
-        #homepage .inner .menu a:hover {
+        #homepage .inner .menu a:hover, #homepage .inner .menu a:active, #homepage .inner .menu a.active {
           border-color: #222; }
 
 @media only screen and (max-width: 768px) {
@@ -197,7 +197,7 @@ a {
         cursor: pointer;
         transition: all .2s ease-in-out;
         border-bottom: 1px solid transparent; }
-        #navbar .inner .main-menu a:hover {
+        #navbar .inner .main-menu a:hover, #navbar .inner .main-menu a:active, #navbar .inner .main-menu a.active {
           border-bottom-color: #222; }
         #navbar .inner .main-menu a img {
           display: inline-block;

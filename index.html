@@ -1,49 +1,50 @@
 <html xmlns="http://www.w3.org/1999/html">
-    <head>
-        <!-- Common tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TBS Alicante</title>
-        <!-- Search Engine -->
-        <meta name="description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
-        <meta name="image" content="assets/meta/screenshot.jpg">
-        <!-- Schema.org for Google -->
-        <meta itemprop="name" content="TBS Alicante">
-        <meta itemprop="description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
-        <meta itemprop="image" content="assets/meta/screenshot.jpg">
-        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-        <meta name="og:title" content="TBS Alicante">
-        <meta name="og:description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
-        <meta name="og:image" content="assets/meta/icon.png">
-        <meta name="og:url" content="http://tbsalicante.com">
-        <meta name="og:site_name" content="TBS Alicante">
-        <meta name="og:locale" content="en_ES">
-        <meta name="fb:admins" content="1497526487209612">
-        <meta name="og:type" content="website">
+	<head>
+		<!-- Common tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TBS Alicante</title>
+		<!-- Search Engine -->
+		<meta name="description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
+		<meta name="image" content="assets/meta/screenshot.jpg">
+		<!-- Schema.org for Google -->
+		<meta itemprop="name" content="TBS Alicante">
+		<meta itemprop="description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
+		<meta itemprop="image" content="assets/meta/screenshot.jpg">
+		<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta name="og:title" content="TBS Alicante">
+		<meta name="og:description" content="Tatuajes personalizados, cortes de pelo, piercing, barbas, todo esto te esta esperando en TBS.">
+		<meta name="og:image" content="assets/meta/icon.png">
+		<meta name="og:url" content="http://tbsalicante.com">
+		<meta name="og:site_name" content="TBS Alicante">
+		<meta name="og:locale" content="en_ES">
+		<meta name="fb:admins" content="1497526487209612">
+		<meta name="og:type" content="website">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="assets/styles/main.css"/>
+		<!-- Styles -->
+		<link rel="stylesheet" href="assets/styles/main.css"/>
+	</head>
 
-        <!-- Libs -->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-    </head>
+	<body ng-app="app">
+		<div id="app"></div>
+	</body>
 
-    <body ng-app="app">
-        <section id="master" ui-view></section>
-    </body>
+	<!-- Vendor -->
+	<script src="node_modules/vue/dist/vue.min.js"></script>
+	<script src="node_modules/vue-router/dist/vue-router.min.js"></script>
 
-    <!-- Vendor -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+	<!-- Components -->
+	<script src="app/components/navbar.js"></script>
+	<script src="app/components/page-header.js"></script>
+	<script src="app/components/page-text.js"></script>
 
-    <!-- App -->
-    <script src="app/app.js"></script>
-    <!-- Router -->
-    <script src="app/routes.js"></script>
-    <!-- Controllers -->
-    <script src="app/controllers/main.js"></script>
-    <script src="app/controllers/tattoos.js"></script>
-    <!-- Directives -->
-    <script src="app/directives/scroll-x.js"></script>
+	<!-- Pages Components -->
+	<script src="app/components/home.js"></script>
+	<script src="app/components/tattoos.js"></script>
+
+	<!-- Router -->
+	<script src="app/router.js"></script>
+
+	<!-- App -->
+	<script src="app/app.js"></script>
 </html>

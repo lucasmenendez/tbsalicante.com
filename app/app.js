@@ -1,1 +1,7 @@
-var app = angular.module('app', ['ui.router', 'ngAnimate']);
+let App = new Vue({
+	$el: "#app",
+	template:	`<transition name="fade">
+					<router-view></router-view>
+				</transition>`,
+	router: Router
+});

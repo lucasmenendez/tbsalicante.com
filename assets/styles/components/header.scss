@@ -1,4 +1,4 @@
-#header {
+#navbar {
 	display: inline-block;
 	vertical-align: top;
 	position: fixed;
@@ -101,7 +101,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-	#header .inner {
+	#navbar .inner {
 		.logo a {
 			font-size: 0;
 			img {margin: 0;}
@@ -110,13 +110,13 @@
 }
 
 @media screen and (max-width: 925px) {
-	#header .inner {
+	#navbar .inner {
 		.main-menu a img {display: none;}
 	}
 }
 
 @media screen and (max-width: 768px) {
-	#header .inner {
+	#navbar .inner {
 		.main-menu {
 			position: absolute;
 			top: calc(100% + 1px); left: 0;

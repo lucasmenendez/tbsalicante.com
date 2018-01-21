@@ -1,4 +1,4 @@
-#index {
+#homepage {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
@@ -71,7 +71,7 @@
 			}
 		}
 
-		.index-menu {
+		.menu {
 			display: inline-block;
 			vertical-align: top;
 			position: relative;
@@ -114,20 +114,20 @@
 }
 
 @media only screen and (max-width: 768px) {
-	#index .inner .index-menu a {
+	#homepage .inner .menu a {
 		width: 46%;
 		margin: 0 2%;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	#index .inner {
+	#homepage .inner {
 		.header .logo a {
 			font-size: 30px;
 			img {max-width: 120px;}
 		}
 
-		.index-menu a {
+		.menu a {
 			font-size: 20px;
 			padding: 10px 20px;
 			img {

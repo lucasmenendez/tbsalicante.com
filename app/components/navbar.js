@@ -7,7 +7,7 @@ let Navbar = Vue.component("navbar-component", {
 								Tattoo Barber Shop Alc
 							</router-link>
 						</h1>
-						<span class="hamburger" v-on:click="toggleMenu = !toggleMenu"></span>
+						<span class="hamburger" v-bind:class="{ cross: toggleMenu }" v-on:click="toggleMenu = !toggleMenu"></span>
 						<nav class="main-menu" v-bind:class="{ show: toggleMenu }">
 							<router-link :to="{ name: 'tattoos' }">
 								<img src="assets/icons/tattoo.svg"/>

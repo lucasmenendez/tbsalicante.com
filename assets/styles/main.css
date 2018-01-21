@@ -328,7 +328,7 @@ a {
     height: auto;
     padding: 30px 5%; }
     .page-text .content .title {
-      font-size: 30px;
+      font-size: 35px;
       font-family: 'Kaushan Script', cursive;
       margin: 0 0 30px; }
     .page-text .content p {
@@ -344,5 +344,109 @@ a {
     .page-text .picture {
       width: 100%;
       height: 50vw; } }
+.page-team {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 5% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0; }
+  .page-team:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1; }
+  .page-team .title {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 20px 2%;
+    margin: 5% auto;
+    border-top: 2px solid #f8f8f8;
+    border-bottom: 2px solid #f8f8f8;
+    color: #f8f8f8;
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive; }
+  .page-team .team {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; }
+    .page-team .team > * {
+      font-size: initial; }
+
+.team-profile {
+  display: inline-block;
+  vertical-align: top;
+  width: 29.333%;
+  margin: 3% 2%;
+  height: auto;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; }
+  .team-profile .profile-picture {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 3% -15%;
+    border-radius: 50%;
+    z-index: 1; }
+  .team-profile .profile-body {
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+    height: auto;
+    padding: 19% 5% 10%;
+    background: #f8f8f8;
+    text-align: left;
+    border-bottom: 6px solid #dddddd;
+    z-index: 0; }
+    .team-profile .profile-body .profile-header {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #dddddd;
+      text-align: center; }
+      .team-profile .profile-body .profile-header .profile-name {
+        font-size: 22px; }
+      .team-profile .profile-body .profile-header .profile-instagram {
+        display: block;
+        margin: 5px 0;
+        padding: 2px 5px;
+        color: #777777;
+        transition: all .2s ease-in-out; }
+        .team-profile .profile-body .profile-header .profile-instagram:hover {
+          text-decoration: underline; }
+
+@media screen and (max-width: 1150px) {
+  .team-profile {
+    width: 40%;
+    margin: 3% 5%; } }
+@media screen and (max-width: 768px) {
+  .team-profile {
+    width: 80%;
+    margin: 3% 10%; } }
 
 /*# sourceMappingURL=main.css.map */

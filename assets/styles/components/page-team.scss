@@ -1,0 +1,61 @@
+.page-team {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 5% 0;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.6;
+		z-index: -1;
+	}
+
+	.title {
+		display: inline-block;
+		width: auto;
+		height: auto;
+		padding: 20px 2%;
+		margin: 5% auto;
+
+		border-top: 2px solid $white;
+		border-bottom: 2px solid $white;
+
+		color: $white;
+		font-size: 35px;
+		font-family: 'Kaushan Script', cursive;
+	}
+
+	.team {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		width: 100%;
+		height: auto;
+		font-size: 0;
+		& > * { font-size: initial; }
+
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1150px) {}
+
+@media screen and (max-width: 925px) {}
+
+@media screen and (max-width: 768px) {}

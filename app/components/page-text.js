@@ -4,7 +4,7 @@ let PageText = Vue.component("page-text-component", {
 						<h3 class="title">{{ title }}</h3>
 						<p v-for="paragraph in paragraphs">{{ paragraph }}</p>
 					</div>
-					<div class="picture" v-if="picture" v-bind:style="{ backgroundImage: picture }"></div>
+					<div class="picture" v-if="picture" v-bind:style="backgroundStyle"></div>
 				</section>`,
 	props: {
 		title: {
@@ -16,5 +16,12 @@ let PageText = Vue.component("page-text-component", {
 			required: true
 		},
 		picture: String
+	},
+	data() {
+		return {
+			backgroundStyle: {
+				"background-image": `url(${ this.picture })`
+			}
+		}
 	}
 });

@@ -1,8 +1,8 @@
 let Tattoos = Vue.component("tattoos-component", {
-	template:	`<div id="tatoos">
+	template:	`<div id="tattoos">
 					<navbar></navbar>
-					<page-header title="{{ header.title }}" background="{{ header.background }}"></page-header>
-					<page-text title="{{ sectionText.title }}" paragraps="{{ sectionText.paragraphs }}" picture="{{ sectionText.picture }}"></page-text>
+					<page-header :title="header.title" :background="header.background"></page-header>
+					<page-text :title="sectionText.title" :paragraphs="sectionText.paragraphs" :picture="sectionText.picture"></page-text>
 				</div>`,
 	data() {
 		return {
@@ -11,16 +11,17 @@ let Tattoos = Vue.component("tattoos-component", {
 				background: "assets/img/tattoo-landscape.jpg"
 			},
 			sectionText: {
-				title: "Lorem ipsum dolor sit amet",
+				title: "El arte de lo imborrable",
 				paragraphs: [
-					"Maecenas ut tortor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas efficitur nibh eget nisl scelerisque, rhoncus volutpat elit mollis. Nam ultrices maximus enim, quis egestas leo. Phasellus blandit sed risus id condimentum. Quisque id lectus nec justo faucibus rhoncus. Donec imperdiet sit amet est in pulvinar.",
-					"Maecenas ut tortor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas efficitur nibh eget nisl scelerisque, rhoncus volutpat elit mollis. Nam ultrices maximus enim, quis egestas leo. Phasellus blandit sed risus id condimentum. Quisque id lectus nec justo faucibus rhoncus. Donec imperdiet sit amet est in pulvinar."
+					"El mundo del tatuaje es la forma de representación artística más expresiva que puede existir para un artista, puesto que su obra permanece inalterable de por vida.",
+					"En nuestro estudio, no sólo encontrarás tatuadores experimentados y cualificados, con la ilusión del primer día, sino un espacio único y diferente, acorde a nuestra forma de trabajar y de desarrollar nuestra actividad artística."
 				],
 				picture: "assets/img/tattoo-portrait.jpg"
 			}
 		}
 	},
 	components: {
+		"navbar": Navbar,
 		"page-header": PageHeader,
 		"page-text": PageText
 	}

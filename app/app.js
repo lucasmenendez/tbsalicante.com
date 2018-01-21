@@ -1,5 +1,5 @@
 let App = new Vue({
-	$el: "#app",
+	el: "#app",
 	template:	`<transition name="fade">
 					<router-view></router-view>
 				</transition>`,

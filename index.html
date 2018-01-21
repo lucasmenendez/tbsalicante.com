@@ -23,28 +23,32 @@
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/styles/main.css"/>
+
+		<!-- Vue.js -->
+		<script src="node_modules/vue/dist/vue.js"></script>
 	</head>
 
-	<body ng-app="app">
+	<body>
+		<!-- App element -->
 		<div id="app"></div>
+
+		<!-- Vendor -->
+		<script src="node_modules/vue-router/dist/vue-router.min.js"></script>
+
+		<!-- Components -->
+		<script src="app/components/navbar.js"></script>
+		<script src="app/components/page-header.js"></script>
+		<script src="app/components/page-text.js"></script>
+
+		<!-- Pages Components -->
+		<script src="app/components/home.js"></script>
+		<script src="app/components/tattoos.js"></script>
+		<script src="app/components/barber.js"></script>
+
+		<!-- Router -->
+		<script src="app/router.js"></script>
+
+		<!-- App -->
+		<script src="app/app.js"></script>
 	</body>
-
-	<!-- Vendor -->
-	<script src="node_modules/vue/dist/vue.min.js"></script>
-	<script src="node_modules/vue-router/dist/vue-router.min.js"></script>
-
-	<!-- Components -->
-	<script src="app/components/navbar.js"></script>
-	<script src="app/components/page-header.js"></script>
-	<script src="app/components/page-text.js"></script>
-
-	<!-- Pages Components -->
-	<script src="app/components/home.js"></script>
-	<script src="app/components/tattoos.js"></script>
-
-	<!-- Router -->
-	<script src="app/router.js"></script>
-
-	<!-- App -->
-	<script src="app/app.js"></script>
 </html>

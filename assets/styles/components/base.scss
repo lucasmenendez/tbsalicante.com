@@ -21,14 +21,15 @@ a {
 	text-transform: none;
 }
 
-#master {
-	&.ng-enter {
-        transition: .5s;
-		transform: scale(0.9);
-		opacity: 0;
-    }
-    &.ng-enter-active {
-        opacity: 1;
-	    transform: scale(1);
-    }
+.fade-enter-active, .fade-leave-active {
+	transition-property: opacity;
+	transition-duration: .25s;
+}
+
+.fade-enter-active {
+	transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+	opacity: 0;
 }

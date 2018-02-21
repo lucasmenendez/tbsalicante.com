@@ -1,3 +1,6 @@
 node_modules/
 tbsalicante.com.sublime-project
 tbsalicante.com.sublime-workspace
+.htaccess
+.sass-cache
+.idea/

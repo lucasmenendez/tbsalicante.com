@@ -448,5 +448,322 @@ a {
   .team-profile {
     width: 80%;
     margin: 3% 10%; } }
+.page-services {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 3% 0;
+  background: #f8f8f8; }
+  .page-services .title {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 20px 2%;
+    margin: 2% auto 2%;
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
+    color: #222;
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive; }
+  .page-services .services {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto; }
+    .page-services .services .service {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px auto;
+      padding-bottom: 60px;
+      width: 90%;
+      max-width: 1000px;
+      border-bottom: 1px solid #dddddd; }
+      .page-services .services .service:last-child {
+        border: none; }
+      .page-services .services .service .service-thumbnail {
+        display: inline-block;
+        vertical-align: top;
+        width: 80%;
+        max-width: 300px;
+        margin-right: 30px; }
+        .page-services .services .service .service-thumbnail img {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          height: auto;
+          border-radius: 50%; }
+      .page-services .services .service .service-info {
+        display: inline-block;
+        vertical-align: top;
+        flex: 1;
+        text-align: left;
+        margin-left: 30px; }
+        .page-services .services .service .service-info .info-header {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          height: auto; }
+          .page-services .services .service .service-info .info-header .info-icon {
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+            height: 64px;
+            margin: 8px 20px 8px 0; }
+          .page-services .services .service .service-info .info-header .info-title {
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+            height: auto;
+            line-height: 64px;
+            font-size: 30px;
+            font-family: 'Kaushan Script', cursive; }
+        .page-services .services .service .service-info .info-description {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          height: auto;
+          margin: 2% 0; }
+        .page-services .services .service .service-info .service-subservices {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          max-width: 700px;
+          height: auto; }
+          .page-services .services .service .service-info .service-subservices .subservice-info {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0; }
+            .page-services .services .service .service-info .service-subservices .subservice-info .subservice-description {
+              display: inline-block;
+              vertical-align: top;
+              width: auto;
+              height: auto; }
+            .page-services .services .service .service-info .service-subservices .subservice-info .subservice-price {
+              display: inline-block;
+              vertical-align: top;
+              width: auto;
+              height: auto;
+              padding: 5px 10px;
+              border: 1px solid #222; }
+
+@media screen and (max-width: 768px) {
+  .page-services .services .service {
+    display: inline-block;
+    vertical-align: top; }
+    .page-services .services .service .service-info {
+      display: block;
+      margin-top: 5vh; } }
+.history {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  color: white;
+  z-index: 1;
+  background: black; }
+  .history .history-header {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    padding: 15vh 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; }
+    .history .history-header .title {
+      display: block;
+      font-size: 30px;
+      font-family: 'Kaushan Script', cursive;
+      padding-bottom: 5vh;
+      border-bottom: 1px solid white;
+      margin-bottom: 5vh; }
+    .history .history-header .description {
+      display: block;
+      width: 100%;
+      font-size: 20px;
+      line-height: 38px; }
+  .history .history-sections {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto; }
+    .history .history-sections .history-section {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right; }
+      .history .history-sections .history-section:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        background: -moz-linear-gradient(top, black 0%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(top, black 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%); }
+      .history .history-sections .history-section:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        background: -moz-linear-gradient(bottom, black 0%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(bottom, black 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to top, black 0%, rgba(255, 255, 255, 0) 100%); }
+      .history .history-sections .history-section .section-content {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        padding: 3% 5%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: -moz-linear-gradient(left, black 0%, black 20%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(left, black 0%, black 20%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, black 0%, black 20%, rgba(255, 255, 255, 0) 100%); }
+        .history .history-sections .history-section .section-content p {
+          display: inline-block;
+          vertical-align: top;
+          max-width: 60%;
+          font-size: 18px;
+          line-height: 36px; }
+      .history .history-sections .history-section:nth-child(2n) {
+        background-position: left; }
+        .history .history-sections .history-section:nth-child(2n) .section-content {
+          justify-content: flex-end;
+          background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, black 70%, black 100%);
+          background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, black 70%, black 100%);
+          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, black 70%, black 100%); }
+
+@media screen and (max-width: 1280px) {
+  .history .history-sections .history-section {
+    background-position: center !important;
+    margin-bottom: 20vh; }
+    .history .history-sections .history-section:after {
+      display: none; }
+    .history .history-sections .history-section .section-content, .history .history-sections .history-section:nth-child(2n) .section-content {
+      padding-top: 45vh;
+      background: -moz-linear-gradient(bottom, black 0%, black 20%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-linear-gradient(bottom, black 0%, black 20%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to top, black 0%, black 20%, rgba(255, 255, 255, 0) 100%); }
+      .history .history-sections .history-section .section-content p, .history .history-sections .history-section:nth-child(2n) .section-content p {
+        max-width: 100%; } }
+@media screen and (max-width: 925px) {
+  .history .history-sections .history-section {
+    height: 40vh; } }
+#studio {
+  position: relative; }
+  #studio .page-contact .show-form {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background: #f8f8f8;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0 0 30px -10px #000;
+    margin: 10px 0 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; }
+  #studio .page-contact .contact-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+    #studio .page-contact .contact-frame .contact-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: start;
+      width: 90%;
+      max-width: 900px;
+      height: auto;
+      max-height: 60%;
+      background: white;
+      padding: 30px 3%;
+      border-radius: 3px;
+      box-shadow: 0 6px 30px -10px #000; }
+      #studio .page-contact .contact-frame .contact-container h2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 40px; }
+      #studio .page-contact .contact-frame .contact-container .info, #studio .page-contact .contact-frame .contact-container .form {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        height: auto;
+        padding: 20px 10px; }
+        #studio .page-contact .contact-frame .contact-container .info h4, #studio .page-contact .contact-frame .contact-container .form h4 {
+          margin-bottom: 20px;
+          font-size: 24px; }
+        #studio .page-contact .contact-frame .contact-container .info label, #studio .page-contact .contact-frame .contact-container .form label {
+          display: block;
+          font-weight: bold;
+          margin: 10px 0 5px;
+          color: #555555; }
+        #studio .page-contact .contact-frame .contact-container .info p, #studio .page-contact .contact-frame .contact-container .form p {
+          padding: 5px 0; }
+        #studio .page-contact .contact-frame .contact-container .info input, #studio .page-contact .contact-frame .contact-container .info textarea, #studio .page-contact .contact-frame .contact-container .form input, #studio .page-contact .contact-frame .contact-container .form textarea {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          height: auto;
+          margin: 5px 0 10px;
+          padding: 5px 10px;
+          outline: none;
+          border: 1px solid #bbbbbb;
+          border-radius: 5px; }
+        #studio .page-contact .contact-frame .contact-container .info button, #studio .page-contact .contact-frame .contact-container .form button {
+          display: inline-block;
+          vertical-align: top;
+          width: auto;
+          height: auto;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 3px;
+          background: #dddddd;
+          border-bottom: 1px solid gainsboro;
+          box-shadow: 0 3px 20px -10px #000;
+          margin: 10px 0 30px;
+          outline: none;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+          font-size: 16px;
+          font-family: 'Raleway', sans-serif; }
+          #studio .page-contact .contact-frame .contact-container .info button:hover, #studio .page-contact .contact-frame .contact-container .info button:active, #studio .page-contact .contact-frame .contact-container .form button:hover, #studio .page-contact .contact-frame .contact-container .form button:active {
+            background: #f8f8f8; }
 
 /*# sourceMappingURL=main.css.map */

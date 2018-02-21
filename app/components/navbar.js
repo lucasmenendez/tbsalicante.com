@@ -14,14 +14,14 @@ let Navbar = Vue.component("navbar-component", {
 								Tattoo Studio
 							</router-link>
 							<router-link :to="{ name: 'barber' }">
-								<img src="assets/icons/barber.svg"/>
+								<img src="assets/icons/barber_shop.svg"/>
 								Barber Shop
 							</router-link>
-							<router-link :to="{ name: 'barber' }">
+							<router-link :to="{ name: 'tbsfamily' }">
 								<img src="assets/icons/family.svg"/>
 								TBS Family
 							</router-link>
-							<router-link :to="{ name: 'barber' }">
+							<router-link :to="{ name: 'thestudio' }">
 								<img src="assets/icons/studio.svg"/>
 								The Studio
 							</router-link>

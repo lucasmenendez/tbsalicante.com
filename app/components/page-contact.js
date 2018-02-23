@@ -25,15 +25,15 @@ let PageContact = Vue.component("page-conframetact-component", {
 								</div>
 							</div>
 							
-							<div class="form" data-netlify="true" name="contact">
+							<div class="form">
 								<h4>Habla con nosotros</h4>
-								<form>
+								<form data-netlify="true" name="contact">
 									<input placeholder="Nombre y apellidos" type="text" name="name">
 									<input placeholder="Asunto" type="text" name="subject">
 									<input placeholder="Correo electrónico" type="email" name="email">
 									<textarea placeholder="Mensaje" name="content"></textarea>
 									
-									<button type="button" v-on:click="send">Enviar</button>
+									<button type="submit" v-on:click="send">Enviar</button>
 								</form>									
 							</div>
 						</div>

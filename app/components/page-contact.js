@@ -27,7 +27,7 @@ let PageContact = Vue.component("page-conframetact-component", {
 							
 							<div class="form">
 								<h4>Habla con nosotros</h4>
-								<form name="contact" netlify>
+								<form name="contact" netlify netlify-honeypot="bot-field">
 									<input placeholder="Nombre y apellidos" type="text" name="name">
 									<input placeholder="Asunto" type="text" name="subject">
 									<input placeholder="Correo electrónico" type="email" name="email">

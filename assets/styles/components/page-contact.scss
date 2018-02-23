@@ -197,3 +197,12 @@
 		}
 	}
 }
+
+@media screen and (max-width: 778px) {
+	#studio .page-contact .contact-frame .contact-container {
+		top: 55%;
+		max-height: 80%;
+		overflow-y: auto;
+		.info, .form {width: 100%;}
+	}
+}

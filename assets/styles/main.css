@@ -891,4 +891,12 @@ a {
             #studio .page-contact .contact-frame .contact-container .info form button:hover, #studio .page-contact .contact-frame .contact-container .info form button:active, #studio .page-contact .contact-frame .contact-container .form form button:hover, #studio .page-contact .contact-frame .contact-container .form form button:active {
               background: #f8f8f8; }
 
+@media screen and (max-width: 778px) {
+  #studio .page-contact .contact-frame .contact-container {
+    top: 55%;
+    max-height: 80%;
+    overflow-y: auto; }
+    #studio .page-contact .contact-frame .contact-container .info, #studio .page-contact .contact-frame .contact-container .form {
+      width: 100%; } }
+
 /*# sourceMappingURL=main.css.map */

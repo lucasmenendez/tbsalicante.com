@@ -27,7 +27,7 @@ let PageContact = Vue.component("page-conframetact-component", {
 							
 							<div class="form">
 								<h4>Habla con nosotros</h4>
-								<form data-netlify="true" name="contact">
+								<form name="contact" netlify>
 									<input placeholder="Nombre y apellidos" type="text" name="name">
 									<input placeholder="Asunto" type="text" name="subject">
 									<input placeholder="Correo electrónico" type="email" name="email">
@@ -58,11 +58,6 @@ let PageContact = Vue.component("page-conframetact-component", {
 				email: "",
 				content: ""
 			}
-		}
-	},
-	methods: {
-		send() {
-			console.log(this.form)
 		}
 	}
 });

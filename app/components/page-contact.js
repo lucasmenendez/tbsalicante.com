@@ -1,7 +1,7 @@
 let PageContact = Vue.component("page-conframetact-component", {
-	template:	`<div class="page-contact" >
-					<div class="show-form" v-if="!show" v-on:click="show = !show">Volver</div>
-					<div class="contact-frame" v-if="show">
+	template:	`<div class="page-contact">
+					<div class="show-form" v-if="hidden" v-on:click="hidden = !hidden">Volver →</div>
+					<div class="contact-frame"  v-bind:class="{ hidden: hidden }">
 						<div class="contact-container">
 							<h2>The Studio</h2>
 							
@@ -14,30 +14,27 @@ let PageContact = Vue.component("page-conframetact-component", {
 								<div class="info-block">
 									<label>Dirección</label>
 									<p>{{ address }}</p>
-									<button type="button" v-on:click="show = !show">Ver mapa</button>
+								</div>
+								
+								<div class="showmap" v-on:click="hidden = !hidden">
+									<img src="/assets/img/showcase.jpg">
+									<span>
+										<img src="/assets/icons/map.svg">
+										Ver mapa
+									</span>
 								</div>
 							</div>
 							
-							<div class="form">
+							<div class="form" data-netlify="true" name="contact">
 								<h4>Habla con nosotros</h4>
-								<div class="input-group">
-									<label>Nombre y apellidos</label>
-									<input type="text" v-model="form.name">
-								</div>
-								<div class="input-group">
-									<label>Asunto</label>
-									<input type="text" v-model="form.subject">
-								</div>
-								<div class="input-group">
-									<label>Correo electrónico</label>
-									<input type="email" v-model="form.email">
-								</div>
-								<div class="input-group">
-									<label>Mensaje</label>
-									<textarea v-model="form.content"></textarea>
-								</div>
-								
-								<button type="button" v-on:click="send">Enviar</button>
+								<form>
+									<input placeholder="Nombre y apellidos" type="text" name="name">
+									<input placeholder="Asunto" type="text" name="subject">
+									<input placeholder="Correo electrónico" type="email" name="email">
+									<textarea placeholder="Mensaje" name="content"></textarea>
+									
+									<button type="button" v-on:click="send">Enviar</button>
+								</form>									
 							</div>
 						</div>
 					</div>
@@ -54,7 +51,7 @@ let PageContact = Vue.component("page-conframetact-component", {
 	},
 	data() {
 		return {
-			show: true,
+			hidden: false,
 			form: {
 				name: "",
 				subject: "",

@@ -22,7 +22,7 @@ let Home = Vue.component("home-page", {
 								<img src="assets/icons/family.svg"/>
 								TBS Family
 							</router-link>
-							<router-link :to="{ name: 'barber' }">
+							<router-link :to="{ name: 'thestudio' }">
 								<img src="assets/icons/studio.svg"/>
 								The Studio
 							</router-link>

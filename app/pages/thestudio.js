@@ -19,5 +19,8 @@ let TheStudio = Vue.component("thestudio-page", {
 	components: {
 		"navbar": Navbar,
 		"page-contact": PageContact
+	},
+	methods: {
+		clicked() {console.log("EH")}
 	}
 });

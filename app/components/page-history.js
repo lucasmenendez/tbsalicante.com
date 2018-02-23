@@ -1,5 +1,11 @@
 let PageHistory = Vue.component("page-history-components", {
 	template:   `<div class="history">
+					<div class="indicator">
+						<span class="mouse">
+							<span class="wheel"></span>
+						</span>
+						<p>↓ Scroll Down ↓</p>
+					</div>
 					<div class="history-header">
 						<h3 class="title">{{ title }}</h3>
 						<p v-if="description" class="description">{{ description }}</p>
@@ -10,6 +16,9 @@ let PageHistory = Vue.component("page-history-components", {
 								<p>{{ section.content }}</p>	
 							</div>					
 						</div>
+					</div>
+					<div class="history-footer">
+						<img src="/assets/img/logo_w.png">
 					</div>
 				</div>`,
 	props: {

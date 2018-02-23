@@ -31,7 +31,7 @@ let PageContact = Vue.component("page-conframetact-component", {
 									<input placeholder="Nombre y apellidos" type="text" name="name">
 									<input placeholder="Asunto" type="text" name="subject">
 									<input placeholder="Correo electrónico" type="email" name="email">
-									<textarea placeholder="Mensaje" name="content"></textarea>
+									<input placeholder="Mensaje" type="text" name="content">
 									
 									<button type="submit">Enviar</button>
 								</form>									

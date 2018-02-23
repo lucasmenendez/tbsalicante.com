@@ -871,8 +871,6 @@ a {
             border: 1px solid #bbbbbb;
             border-radius: 5px;
             font-family: 'Raleway', sans-serif; }
-          #studio .page-contact .contact-frame .contact-container .info form textarea, #studio .page-contact .contact-frame .contact-container .form form textarea {
-            min-height: 100px; }
           #studio .page-contact .contact-frame .contact-container .info form button, #studio .page-contact .contact-frame .contact-container .form form button {
             display: inline-block;
             vertical-align: top;

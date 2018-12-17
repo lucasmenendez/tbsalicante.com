@@ -58,7 +58,7 @@ let Barber = Vue.component("barber-page", {
 						subservices: [
 							{
 								description: "Corte de pelo",
-								price: 10,
+								price: 12,
 								from: false
 							},
 							{
@@ -73,7 +73,7 @@ let Barber = Vue.component("barber-page", {
 							},
 							{
 								description: "Afeitado cabeza a navaja",
-								price: 10,
+								price: 12,
 								from: false
 							},
 							{
@@ -116,12 +116,12 @@ let Barber = Vue.component("barber-page", {
 						subservices: [
 							{
 								description: "Corte básico",
-								price: 8,
+								price: 10,
 								from: false
 							},
 							{
 								description: "Corte especial",
-								price: 10,
+								price: 12,
 								from: false
 							}
 						]
